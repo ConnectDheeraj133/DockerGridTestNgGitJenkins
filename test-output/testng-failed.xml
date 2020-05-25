@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="browserSamples.Chromelaunch">
+        <methods>
+          <include name="test1"/>
+          <include name="startDocker"/>
+        </methods>
+      </class> <!-- browserSamples.Chromelaunch -->
+      <class name="browserSamples.Firefoxlaunch">
+        <methods>
+          <include name="test2"/>
+        </methods>
+      </class> <!-- browserSamples.Firefoxlaunch -->
+      <class name="browserSamples.Firefoxlaunch2">
+        <methods>
+          <include name="test4"/>
+        </methods>
+      </class> <!-- browserSamples.Firefoxlaunch2 -->
+      <class name="browserSamples.Chromelaunch2">
+        <methods>
+          <include name="test3"/>
+        </methods>
+      </class> <!-- browserSamples.Chromelaunch2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

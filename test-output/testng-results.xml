@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="127789" started-at="2020-05-25T13:07:06Z" finished-at="2020-05-25T13:09:14Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="127789" started-at="2020-05-25T13:07:06Z" finished-at="2020-05-25T13:09:14Z">
+      <class name="browserSamples.Firefoxlaunch2">
+        <test-method status="PASS" signature="test4()[pri:0, instance:browserSamples.Firefoxlaunch2@4501b7af]" name="test4" duration-ms="52358" started-at="2020-05-25T18:37:31Z" finished-at="2020-05-25T18:38:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+      </class> <!-- browserSamples.Firefoxlaunch2 -->
+      <class name="browserSamples.Firefoxlaunch">
+        <test-method status="PASS" signature="test2()[pri:0, instance:browserSamples.Firefoxlaunch@28d25987]" name="test2" duration-ms="38727" started-at="2020-05-25T18:37:31Z" finished-at="2020-05-25T18:38:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- browserSamples.Firefoxlaunch -->
+      <class name="browserSamples.Chromelaunch2">
+        <test-method status="PASS" signature="test3()[pri:0, instance:browserSamples.Chromelaunch2@59fa1d9b]" name="test3" duration-ms="92681" started-at="2020-05-25T18:37:31Z" finished-at="2020-05-25T18:39:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+      </class> <!-- browserSamples.Chromelaunch2 -->
+      <class name="browserSamples.Chromelaunch">
+        <test-method status="PASS" signature="startDocker()[pri:0, instance:browserSamples.Chromelaunch@d8355a8]" name="startDocker" is-config="true" duration-ms="25040" started-at="2020-05-25T18:37:06Z" finished-at="2020-05-25T18:37:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDocker -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:browserSamples.Chromelaunch@d8355a8]" name="test1" duration-ms="26553" started-at="2020-05-25T18:37:31Z" finished-at="2020-05-25T18:37:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="FAIL" signature="stopDcker()[pri:0, instance:browserSamples.Chromelaunch@d8355a8]" name="stopDcker" is-config="true" duration-ms="0" started-at="2020-05-25T18:39:04Z" finished-at="2020-05-25T18:39:04Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at browserSamples.DockerDown.makeDockerdown(DockerDown.java:53)
+	at browserSamples.Chromelaunch.stopDcker(Chromelaunch.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:216)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:143)
+	at org.testng.TestRunner.afterRun(TestRunner.java:973)
+	at org.testng.TestRunner.run(TestRunner.java:604)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDcker -->
+      </class> <!-- browserSamples.Chromelaunch -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
